@@ -1,0 +1,182 @@
+body{overflow-x:clip}
+.oc-certs-sec .oc-head{box-sizing:border-box;width:100%}
+.oc-pj-mosaic figcaption.oc-p-name{font-family:var(--oc-body)!important;font-size:1rem!important;line-height:1.3!important;font-weight:600;letter-spacing:0;text-transform:none}
+.oc-ar .oc-pj-mosaic figcaption.oc-p-name{font-family:var(--oc-ar)!important}
+
+@media (max-width:780px){
+  :root{--oc-gutter:18px}
+  body{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+  input,select,textarea{font-size:16px!important}
+
+  /* header */
+  .oc-header{padding:12px var(--oc-gutter)!important}
+  .oc-header.oc-light{padding-block:8px!important}
+  .oc-header-row{gap:8px}
+  .oc-brand{gap:8px;min-width:0;flex:1 1 auto}
+  .oc-brand img{width:38px!important}
+  .oc-brand-name{font-size:1.02rem!important;letter-spacing:.03em;overflow:hidden;text-overflow:ellipsis}
+  .oc-header .wp-block-navigation{order:3;flex:none}
+  .oc-head-actions{order:2;flex:none}
+  .oc-lang-btn{height:38px;padding:0 12px;font-size:.85rem}
+  .oc-header .wp-block-navigation__responsive-container-open{width:40px;height:40px;border-radius:12px;display:grid!important;place-items:center;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.45);color:#fff}
+  .oc-header.oc-light .wp-block-navigation__responsive-container-open{box-shadow:inset 0 0 0 1.5px rgba(42,59,142,.35);color:var(--oc-navy)}
+  .oc-header .wp-block-navigation__responsive-container.is-menu-open{padding:90px 26px 40px!important}
+  .oc-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item{font-size:2rem}
+  .oc-ar .oc-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item{font-size:1.5rem}
+
+  /* hero */
+  .oc-hero{min-height:92svh!important;padding:118px var(--oc-gutter) 120px!important;align-items:flex-end!important}
+  .oc-hero-chip{font-size:.8rem!important;padding:6px 12px 6px 10px!important;margin-bottom:16px!important}
+  .oc-hero-title{font-size:clamp(2.3rem,11vw,3.2rem)!important;line-height:1.02!important;margin-bottom:16px!important}
+  .oc-ar .oc-hero-title{line-height:1.3!important}
+  .oc-hero-sub{font-size:1rem!important;line-height:1.6;margin-bottom:22px!important}
+  .oc-hero .wp-block-buttons{display:grid!important;grid-template-columns:1fr 1fr;gap:10px!important}
+  .oc-hero .wp-block-button{width:100%!important;margin:0!important}
+  .oc-hero .wp-block-button:first-child{grid-column:1/-1}
+  .oc-hero .wp-block-button__link{width:100%;box-sizing:border-box;text-align:center;justify-content:center;padding:14px 12px!important;font-size:.95rem!important}
+  .oc-hs{bottom:84px!important}
+  .oc-page-hero{min-height:44svh!important;padding:120px var(--oc-gutter) 84px!important}
+  .oc-page-hero h1{font-size:clamp(2.2rem,10vw,3rem)!important}
+  .oc-page-hero .oc-hero-sub{font-size:.98rem!important}
+
+  /* stats: compact 2-column tiles */
+  .oc-stats{margin-top:-48px!important}
+  .oc-stats-grid{grid-template-columns:1fr 1fr!important;gap:1px;background:#E3ECF6!important;border-radius:20px}
+  .oc-stat{background:#fff;padding:18px 16px!important;border:0!important}
+  .oc-stat:first-child{grid-column:1/-1;padding:22px 18px!important;background:linear-gradient(135deg,#fff,var(--oc-foam))}
+  .oc-stat .oc-num{font-size:2.3rem!important;margin-bottom:4px!important}
+  .oc-stat:first-child .oc-num{font-size:3rem!important}
+  .oc-ar .oc-stat .oc-num{font-size:1.9rem!important}
+  .oc-ar .oc-stat:first-child .oc-num{font-size:2.5rem!important}
+  .oc-stat p{font-size:.82rem!important;line-height:1.45}
+  .oc-stats-grid>.oc-stat:last-child:nth-child(even){grid-column:1/-1}
+
+  /* rhythm */
+  .oc-section{padding:60px var(--oc-gutter)!important}
+  .oc-h2{font-size:clamp(1.9rem,9vw,2.5rem)!important;line-height:1.05!important}
+  .oc-ar .oc-h2{font-size:clamp(1.6rem,7.5vw,2.1rem)!important;line-height:1.35!important}
+  .oc-lead{font-size:1rem!important;line-height:1.65}
+  .oc-head{margin-bottom:28px!important}
+  .oc-kicker{font-size:.85rem;margin-bottom:.6rem!important}
+  .oc-waves{height:48px!important}
+  .oc-marquee{padding:16px 0!important;margin:34px 0!important}
+
+  /* about split */
+  .oc-split-media .oc-img-2{width:42%;bottom:-24px;border-width:5px}
+  .oc-day-badge{top:14px;padding:10px 14px!important}
+
+  /* service cards: swipe carousel */
+  .oc-cards{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px!important;margin-inline:calc(var(--oc-gutter)*-1)!important;padding:8px var(--oc-gutter) 22px!important;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-padding-inline:var(--oc-gutter)}
+  .oc-cards::-webkit-scrollbar{display:none}
+  .oc-cards>*{flex:0 0 82%!important;max-width:320px;scroll-snap-align:start;margin:0!important}
+  .oc-card .wp-block-image img{aspect-ratio:16/10}
+  .oc-card-body{padding:20px 20px 22px!important}
+  .oc-card h3{font-size:1.35rem!important}
+  .oc-card p{font-size:.92rem}
+
+  /* steps: vertical timeline */
+  .oc-steps{grid-template-columns:1fr!important;gap:26px!important}
+  .oc-step{display:grid!important;grid-template-columns:56px 1fr;column-gap:16px;text-align:start!important;padding:0!important;align-items:start}
+  .oc-step>*{grid-column:2;margin-inline:0!important}
+  .oc-step>.oc-step-dot{grid-column:1;grid-row:1/span 3;width:56px!important;height:56px!important;margin:0!important;font-size:1.6rem!important;box-shadow:0 0 0 2px rgba(77,199,239,.5),0 0 0 6px rgba(77,199,239,.08)!important}
+  .oc-step h3{font-size:1.25rem!important;margin:4px 0 4px!important}
+  .oc-step p{font-size:.9rem!important}
+  .oc-step:not(:last-child)::after{content:"";position:absolute;inset-inline-start:27px;top:66px;bottom:-22px;border-inline-start:2px dashed rgba(77,199,239,.45)}
+
+  /* tiles: icon beside text */
+  .oc-tiles{grid-template-columns:1fr!important;gap:12px!important}
+  .oc-tile{display:grid!important;grid-template-columns:48px 1fr;column-gap:14px;padding:18px!important;align-items:start}
+  .oc-tile>*{grid-column:2;margin-inline:0!important}
+  .oc-tile>.oc-icon{grid-column:1;grid-row:1/span 3;width:48px!important;height:48px!important;border-radius:14px}
+  .oc-tile h3{font-size:1.2rem!important;margin:2px 0 4px!important}
+  .oc-tile p{font-size:.9rem!important}
+
+  /* home projects mosaic */
+  .oc-mosaic,.oc-pj-mosaic{grid-template-columns:1fr 1fr!important;grid-auto-rows:150px!important;gap:10px!important}
+  .oc-pj-mosaic .wp-block-image:nth-child(1){grid-column:1/-1;grid-row:span 1}
+  .oc-pj-mosaic figcaption.oc-p-name{font-size:.82rem!important;padding:28px 10px 9px!important}
+  .oc-pj-mosaic .wp-block-image:nth-child(1) figcaption.oc-p-name{font-size:.98rem!important}
+  .oc-pj-badge{display:none}
+
+  /* certificates */
+  .oc-certs-sec{padding:56px 0 50px!important}
+  .oc-certs-sec .oc-head{margin-bottom:24px!important}
+  .oc-cert{width:228px}
+  .oc-cert-txt{padding:14px 16px 16px}
+  .oc-cert-name{font-size:.95rem}
+
+  /* CTA */
+  .oc-cta{padding:34px 22px!important;border-radius:24px!important}
+  .oc-cta h2{font-size:clamp(1.8rem,8vw,2.3rem)!important}
+  .oc-cta .wp-block-buttons{display:grid!important;grid-template-columns:1fr;gap:10px!important}
+  .oc-cta .wp-block-button,.oc-cta .wp-block-button__link{width:100%;box-sizing:border-box;text-align:center}
+
+  /* team */
+  .oc-team{grid-template-columns:1fr 1fr!important;gap:12px!important}
+  .oc-member-body{padding:12px 12px 14px!important}
+  .oc-member h3{font-size:1.05rem!important;line-height:1.2}
+  .oc-member .oc-m-role{font-size:.78rem!important}
+  .oc-m-contact{gap:6px;margin-top:10px}
+  .oc-m-contact .oc-cl{width:34px;height:34px}
+  .oc-m-contact .oc-cl svg{width:16px;height:16px}
+  .oc-m-cta{display:none!important}
+  .oc-m-count{transform:scale(.85);transform-origin:top right}
+  .oc-tabs{margin-bottom:28px!important;border-radius:16px;scrollbar-width:none}
+  .oc-tabs::-webkit-scrollbar{display:none}
+  .oc-tab{padding:10px 14px;font-size:.85rem}
+  .oc-dept-title{font-size:1.6rem!important}
+  .oc-tsearch{margin-bottom:16px}
+
+  /* projects */
+  .oc-projects{gap:44px 16px!important}
+  .oc-project-body{padding:18px 18px 20px!important}
+  .oc-pfilter{gap:8px;padding:10px;display:grid!important;grid-template-columns:1fr 1fr}
+  .oc-pf-search{grid-column:1/-1}
+  .oc-pfilter select{width:100%;padding:11px 30px 11px 12px;font-size:.88rem!important;background-position:right 10px center}
+  .oc-ar .oc-pfilter select{padding:11px 12px 11px 30px;background-position:left 10px center}
+
+  /* videos */
+  .oc-vgrid{grid-template-columns:1fr!important}
+
+  /* contact */
+  .oc-map iframe{height:300px}
+  .oc-contact-cards{gap:12px!important}
+
+  /* footer */
+  .oc-footer-grid{grid-template-columns:1fr 1fr!important;gap:30px 18px!important;margin-top:28px!important}
+  .oc-footer-grid>*:first-child,.oc-footer-grid>*:last-child{grid-column:1/-1}
+  .oc-footer h4{font-size:1.25rem!important;margin-bottom:12px!important}
+  .oc-ar .oc-footer h4{font-size:1.05rem!important}
+  .oc-footer p{font-size:.9rem!important;margin-bottom:8px!important}
+  .oc-footer-bottom{flex-direction:column;align-items:center;text-align:center;margin-top:30px!important;gap:6px}
+  .oc-social-row{flex-direction:column;align-items:center;text-align:center;padding:18px!important;margin-top:28px!important}
+  .oc-credit{padding-bottom:22px}
+
+  /* floating buttons become a slim bottom action bar */
+  .oc-fab{inset:auto 10px calc(10px + env(safe-area-inset-bottom)) 10px!important;flex-direction:row!important;gap:10px!important;transition:transform .45s var(--oc-ease),opacity .45s}
+  .oc-fab .oc-fab-top{display:none!important}
+  .oc-fab a{flex:1;width:auto!important;height:52px!important;border-radius:16px!important;display:flex!important;align-items:center;justify-content:center;gap:10px;font:700 .95rem/1 var(--oc-body);color:#fff!important;animation:none!important;box-shadow:0 12px 26px -12px rgba(10,28,64,.7)}
+  .oc-fab a:hover{transform:none}
+  .oc-fab a svg{width:20px!important;height:20px!important}
+  .oc-fab .oc-fab-call::after{content:"Call us"}
+  .oc-fab .oc-fab-wa::after{content:"WhatsApp"}
+  body:has(.oc-ar) .oc-fab .oc-fab-call::after{content:"اتصل بنا"}
+  body:has(.oc-ar) .oc-fab .oc-fab-wa::after{content:"واتساب"}
+  body:has(.oc-ar) .oc-fab a{font-family:var(--oc-ar)}
+  .oc-ar .oc-fab a{font-family:var(--oc-ar)}
+  .oc-fab.oc-fab-away{transform:translateY(140%);opacity:0;pointer-events:none}
+
+  /* modals */
+  .oc-modal-x{top:12px!important;inset-inline-end:12px!important;width:44px;height:44px}
+  .oc-fm-head{padding-top:70px!important}
+  .oc-pgrid{grid-template-columns:1fr 1fr!important;gap:8px!important}
+}
+@media (max-width:360px){
+  .oc-brand-name{font-size:.9rem!important}
+  .oc-lang-btn{padding:0 9px}
+  .oc-team{gap:8px!important}
+}
+.oc-lock .oc-fab{opacity:0;pointer-events:none}
+/* live patches V5b–V5g (applied on site) */
+@media (max-width:780px){body{padding-bottom:0!important}.oc-credit{padding-bottom:calc(84px + env(safe-area-inset-bottom))!important}.oc-hero .wp-block-button__link{display:flex!important;align-items:center;min-height:50px}.oc-cta-wrap{padding-top:0!important}}
+html{overflow-x:hidden}
